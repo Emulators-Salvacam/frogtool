@@ -4,7 +4,7 @@ FROGTOOL v0.3.0
 by taizou  
 https://github.com/tzlion/frogtool
 
-This tool allows you to rebuild the preset game lists on the SF2000, GB300 and 8BitKing emulators, so you can add (or 
+This tool allows you to rebuild the preset game lists on the SF2000, GB300 (V1 & V2) and 8BitKing emulators, so you can add (or 
 remove) ROMs in the proper system categories instead of only being able to add them in the user folder.
 
 Also now supports thumbnails!
@@ -58,6 +58,7 @@ This tool has been tested & confirmed to work on the following SF2000 firmware/S
 This tool has also been tested & confirmed to work on the following GB300 firmware/SD card image versions:
 * Launch version (2023-12-15)
 
+* 2025-02-01 update GB300 V2
 
 Use on any later versions is at your own risk!
 
@@ -110,7 +111,7 @@ Then either
 
 * `drive`:  the location of your SF2000 / GB300 SD card (e.g. a drive letter on Windows or a mount point on Linux/Mac)
 * `system`: the system to rebuild, one of `ARCADE`, `FC`, `GB`, `GBA`, `GBC`, `MD`, `SFC`, `PCE`, or `ALL`
-* `platform`: (optional) the platform to build for, either `SF2000`, or `GB300`.
+* `platform`: (optional) the platform to build for, either `SF2000`, `GB300` or `GB300V2`.
 * `-sc`:    skip confirmations (otherwise, it will ask you to confirm before processing, and press enter once finished)
 
 If you omit either drive or system, it will ask you to enter them when run. If you omit platform, it will default to
@@ -272,6 +273,18 @@ PLATFORM: GB300
 | MD     | vdsdc.tax | umboa.nec | qdvd6.bvs |
 | SFC    | scksp.tax | setxa.nec | wmiui.bvs |
 
+PLATFORM: GB300V2
+
+| System | Filenames | Chinese   | Pinyin    |
+|--------|-----------|-----------|-----------|
+| ARCADE | mswb7.tax | msdtc.nec | mfpmp.bvs |
+| FC     | rdbui.tax | fhcfg.nec | nethn.bvs |
+| GB     | vdsdc.tax | umboa.nec | qdvd6.bvs |
+| GBA    | vfnet.tax | htuiw.nec | sppnp.bvs |
+| GBC    | pnpui.tax | wjere.nec | mgdel.bvs |
+| MD     | scksp.tax | setxa.nec | wmiui.bvs |
+| SFC    | urefs.tax | adsnt.nec | xvb6c.bvs |
+| PCE    | kjbyr.tax | djoin.nec | ke89a.bvs |
 
 Explanation of the list types:
 * Filenames = The names of each ROM file. These are also used for the English menus, with file extensions stripped off.

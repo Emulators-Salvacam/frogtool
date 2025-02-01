@@ -40,6 +40,17 @@ systems_gb300 = {
     "SFC":    ["scksp.tax", "setxa.nec", "wmiui.bvs"]
 }
 
+systems_gb300V2 = {
+    "ARCADE": ["mswb7.tax", "msdtc.nec", "mfpmp.bvs"],
+    "FC":     ["rdbui.tax", "fhcfg.nec", "nethn.bvs"],
+    "GB":     ["vdsdc.tax", "umboa.nec", "qdvd6.bvs"],
+    "GBA":    ["vfnet.tax", "htuiw.nec", "sppnp.bvs"],
+    "GBC":    ["pnpui.tax", "wjere.nec", "mgdel.bvs"],
+    "MD":     ["scksp.tax", "setxa.nec", "wmiui.bvs"],
+    "SFC":    ["urefs.tax", "adsnt.nec", "xvb6c.bvs"],
+    "PCE":    ["kjbyr.tax", "djoin.nec", "ke89a.bvs"]
+}
+
 systems_8bitking = {
     "PCE":    ["urefs.tax", "adsnt.nec", "xvb6c.bvs"],
     "FC":     ["rdbui.tax", "fhcfg.nec", "nethn.bvs"],
@@ -50,6 +61,7 @@ systems_8bitking = {
 platforms = {
     "SF2000": systems_sf2000,
     "GB300": systems_gb300,
+    "GB300V2": systems_gb300V2,
     "8BK": systems_8bitking,
 }
 
